@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="netpontoApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sessão Netponto - GulpJs</title>
+
+    <!-- inject:css -->
+    <!-- endinject -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Netponto - GulpJs</a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" ng-controller="ItemCtrl">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Sessão sobre GulpJs
+                    <small>2016-01-23</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row" ng-repeat="item in items">
+            <div class="col-md-4 portfolio-item" ng-repeat="subItem in item.SubItems">
+                <!--<a href="#">-->
+                    <img class="img-responsive" src="{{subItem.ImageUrl}}" alt="">
+                <!--</a>-->
+                <h3>
+                    <a href="#">
+                        {{subItem.Name}}
+                        </a>
+                </h3>
+                <p>{{subItem.Description}}</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Ricardo Costa &copy; <a href="mailto:ricardo.costa@create.pt">ricardo.costa@create.pt</a> 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- inject:js -->
+    <!-- endinject -->
+    
+</body>
+
+</html>

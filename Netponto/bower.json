@@ -1,0 +1,23 @@
+{
+  "name": "netponto",
+  "description": "Sessão GulpJs",
+  "main": "index.js",
+  "authors": [
+    "Ricardo Costa"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "/app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.9",
+    "jquery": "~2.2.0"
+  }
+}
